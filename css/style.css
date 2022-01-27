@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  background-color: rgb(255, 183, 49);
+}
+
+.header {
+  background-color: rgb(255, 183, 49);
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  flex-grow: 2;
+}
+
+.header li {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(146, 121, 38);
+  cursor: pointer;
+}
+
+
+/* BEGINNING OF MAIN SECTION */
+.main {
+  width: 100%;
+  background-image: url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main img {
+  width: 100%;
+  z-index: 1;
+}
+
+.main h1 {
+  background-color: white;
+  width: 400px;
+  height: 50px;
+  font-size: xx-large;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/* Begin categories section */
+.categories {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.categoryImages {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.categoryImages > span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryImages img {
+  width: 200px;
+}
+
+span > p {
+  font-size: 16px;
+  margin-left: 20px
+}
+
+.cat1 {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+}
+
+.cat2 {
+  background-color: rgb(228, 235, 250);
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cat2container {
+  width: 90%;
+}
+
+.categories h1 {
+  width: 500px;
+  height: 50px;
+  font-size: xx-large;
+  padding-top: 15px;
+}
+
+.categories span {
+  background-color: white;
+  padding: 10px;
+  margin: 15px auto 50px;
+}
+
+.categories p {
+  margin-left: 5px;
+}
+
+.cat3 {
+  width: 90%;
+  margin: auto;
+}
+
+.cat3 img {
+  border: 8px solid rgb(209, 209, 209);
+}
+
+#copyright{
+  margin-left: 15px;
+}
+
+/* Start of recipe page */
+
+.main2 {
+  width: 100%;
+  background-image: url("../images/freshLunch.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main2 img {
+  width: 100%;
+  z-index: 1;
+}
+
+.main2 h1 {
+  background-color: white;
+  width: 450px;
+  height: 50px;
+  font-size: xx-large;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.time2 {
+  background-color: rgb(228, 235, 250);
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.time {
+  width: 90%;
+}
+
+.instructions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instructions li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.recipeDisplay {
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.recipeDisplay li {
+  list-style-type: none;
+}
+
+.recipeReview {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.recipeReview>h1 {
+  font-size: 36px;
+}
+
+.recipeReview>li>img {
+  height: 20px;
+}
+
+.recipeButton {
+  background-color: rgba(190, 0, 0, 0.966);
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
+  width: 100px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper1 {
+  display: flex;
+}
+
+.wrapper1 li {
+  margin: 5px;
+}
+
+.wrapper2 {
+  display: flex;
+  align-items: center;
+}
+
+#printer img {
+  height: 30px;
+}
+
+.burgerHype {
+  background-color: rgb(228, 235, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgerHype p {
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.directions {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.directions h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.directions li {
+  padding: 10px;
+}
+
+.spanBold {
+  background-color: rgb(228, 235, 250);
+}
+
+
+/* Media queries */
+@media all and (max-width: 700px) {
+
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header {
+    justify-content: center;
+    height: 150px;
+  }
+
+  #copyright {
+    display: none;
+  }
+
+  #footerMedia {
+    height: 100px;
+  }
+
+
+}
+
+@media all and (max-width: 550px) {
+  .directions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
